@@ -26,6 +26,6 @@ jobs:
         run: npm install --global @biomejs/biome
 
       - name: Run Biome Formatter
-        run: biome check --write --allow-warnings || true
+        run: biome check --write || true
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
