@@ -25,10 +25,6 @@ jobs:
       - name: Install Biome
         run: npm install --global @biomejs/biome
 
-      # Corrigir arquivos automaticamente
-      - name: Run Biome Fix
-        run: biome check --write --unsafe .
-
       # Garantir que tudo ficou certinho
       - name: Verify Biome Formatting
         run: biome check --max-diagnostics=200 .
