@@ -25,7 +25,7 @@ jobs:
       - name: Install Biome
         run: npm install --global @biomejs/biome
 
-      - name: Biome Check  
-        run:  npx biome check
+      - name: Run Biome Formatter
+        run: biome check --write
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
