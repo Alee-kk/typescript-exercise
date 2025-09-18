@@ -27,6 +27,6 @@ jobs:
 
       # Garantir que tudo ficou certinho
       - name: Verify Biome Formatting
-        run: biome check --max-diagnostics=200 .
+        run: biome check
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
