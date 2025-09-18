@@ -26,6 +26,6 @@ jobs:
         run: npm install --global @biomejs/biome
 
       - name: Biome Check  
-        run:  npm biome check
+        run:  npx biome check
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
