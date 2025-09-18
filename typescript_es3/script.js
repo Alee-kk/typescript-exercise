@@ -7,6 +7,6 @@
 function proclaim(status) {
     console.log("I'm ".concat(status || "not ready..."));
 }
-proclaim();
+pro claim();
 proclaim("ready?");
 proclaim("ready!");
